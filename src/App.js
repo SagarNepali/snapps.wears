@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import HomePage from './pages/homepage/homepage.component'
+import '../src/App.css'
 
 function App() {
   return (
     <div className="App">
-     <h1>HELLO</h1>
+      <HomePage></HomePage>
     </div>
-  );
+  )
 }
 
 export default App;
