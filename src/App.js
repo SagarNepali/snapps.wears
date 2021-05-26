@@ -1,4 +1,5 @@
 import HomePage from './pages/homepage/homepage.component'
+import CheckoutPage from './pages/checkout/checkout.component'
 import '../src/App.css'
 import{Router,Switch, Route, Redirect } from 'react-router-dom'
 import HatsPage from './pages/hats/hatspage'
@@ -55,6 +56,7 @@ class App extends React.Component {
           <Route exact path='/' component={HomePage}/>
           <Route path='/hats' component={HatsPage}/>
           <Route path='/shop' component={ShopPage}/>
+          <Route exact path='/checkout' component={CheckoutPage}/>
           <Route exact path='/signin' render={ () => 
             this.props.currentUser ? (<Redirect to="/" />) : (<SignInAndSignUpPage/>)
           }/>
